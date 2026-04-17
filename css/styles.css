@@ -1,0 +1,322 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f5f5;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #111;
+    color: white;
+}
+
+.header a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* Hero */
+.hero {
+    height: 90vh;
+    background: url('../../images/kitchen1.png') center/cover no-repeat;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.6);
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Sections */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Button */
+.btn, button {
+    background: #c59d5f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* CTA */
+.cta {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+button {
+    border-radius: 8px;
+}
+
+.center {
+    text-align: center;
+}
+
+
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.cart-item {
+    background: white;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 90px;
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    background: #c59d5f;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer h3, .footer h4 {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* MOBILE OPTIMIZATION */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* MOBILE */
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.products {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .nav a {
+        padding: 10px;
+        width: 100%;
+        display: block;
+        border-top: 1px solid #333;
+    }
+}
+
+    /* GRID FIXES */
+    .grid-3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    /* HERO TEXT */
+    .overlay h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    /* FORM */
+    .contact-form {
+        width: 90%;
+    }
+
+
+
+
+/* GALLERY FIX */
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* clean desktop grid */
+    gap: 15px;
+    padding: 40px;
+}
+
+.gallery img {
+    width: 100%;
+    aspect-ratio: 1 / 1;   /* PERFECT square */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.header {
+    position: relative;
+}
+
+.gallery-preview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery-preview img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+

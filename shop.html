@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kitchen Products</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        <img src="images/logo.png">
+    </div>
+
+ 
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+
+</header>
+
+<h1 class="center">Our Kitchen Solutions</h1>
+
+<!-- 🔹 KITCHEN PACKAGES -->
+<h2 class="center">Kitchen Packages</h2>
+<div class="products">
+
+<div class="product">
+    <img src="images/small-kitchen.jpg">
+    <h3>Small Kitchen (3–5m²)</h3>
+    <p>From R15,000 – R25,000</p>
+    <button onclick="addToCart('Small Kitchen Package', 15000)">Add to Cart</button>
+</div>
+
+<div class="product">
+    <img src="images/medium-kitchen.jpg">
+    <h3>Medium Kitchen (6–10m²)</h3>
+    <p>From R30,000 – R60,000</p>
+    <button onclick="addToCart('Medium Kitchen Package', 30000)">Add to Cart</button>
+</div>
+
+<div class="product">
+    <img src="images/luxury-kitchen.jpg">
+    <h3>Luxury Kitchen (10m²+)</h3>
+    <p>From R70,000 – R120,000+</p>
+    <button onclick="addToCart('Luxury Kitchen Package', 70000)">Add to Cart</button>
+</div>
+
+</div>
+
+<!-- 🔹 CABINETS -->
+<h2 class="center">Cabinets</h2>
+<div class="products">
+
+<div class="product">
+    <img src="images/base-cabinet.jpg">
+    <h3>Base Cabinet</h3>
+    <p>R1,200 – R2,500</p>
+    <button onclick="addToCart('Base Cabinet', 1200)">Add</button>
+</div>
+
+<div class="product">
+    <img src="images/wall-cabinet.jpg">
+    <h3>Wall Cabinet</h3>
+    <p>R1,000 – R2,000</p>
+    <button onclick="addToCart('Wall Cabinet', 1000)">Add</button>
+</div>
+
+<div class="product">
+    <img src="images/pantry.jpg">
+    <h3>Pantry Unit</h3>
+    <p>R3,500 – R8,000</p>
+    <button onclick="addToCart('Pantry Unit', 3500)">Add</button>
+</div>
+
+</div>
+
+<!-- 🔹 COUNTERTOPS -->
+<h2 class="center">Countertops</h2>
+<div class="products">
+
+<div class="product">
+    <img src="images/laminate.jpg">
+    <h3>Laminated Countertop</h3>
+    <p>R800 – R1,500 / m</p>
+    <button onclick="addToCart('Laminated Countertop', 1500)">Add</button>
+</div>
+
+<div class="product">
+    <img src="images/granite.jpg">
+    <h3>Granite Countertop</h3>
+    <p>R2,000 – R4,000 / m</p>
+    <button onclick="addToCart('Granite Countertop', 2500)">Add</button>
+</div>
+
+<div class="product">
+    <img src="images/quartz.jpg">
+    <h3>Quartz Countertop</h3>
+    <p>R3,500 – R6,000 / m</p>
+    <button onclick="addToCart('Quartz Countertop', 3500)">Add</button>
+</div>
+
+</div>
+
+<!-- 🔹 ADD-ONS -->
+<h2 class="center">Add-ons</h2>
+<div class="products">
+
+<div class="product">
+    <img src="images/hinges.jpg">
+    <h3>Soft-Close Hinges</h3>
+    <p>R500 – R1,500</p>
+    <button onclick="addToCart('hinges', 500)">Add</button>
+</div>
+
+<div class="product">
+    <img src="images/led.jpg">
+    <h3>LED Strip Lighting</h3>
+    <p>R800 – R2,000</p>
+    <button onclick="addToCart('LED Strip Lighting', 1500)">Add</button>
+</div>
+
+<div class="product">
+    <img src="images/island.jpg">
+    <h3>Kitchen Island</h3>
+    <p>R5,000 – R20,000</p>
+    <button onclick="addToCart('Kitchen Island', 5500)">Add</button>
+</div>
+
+</div>
+
+<!-- 🔹 INSTALLATION -->
+<h2 class="center">Installation Services</h2>
+<div class="products">
+
+<div class="product">
+    <img src="images/install.jpg">
+    <h3>Cabinet Installation</h3>
+    <p>R2,000 – R5,000</p>
+    <button onclick="addToCart('Cabinet Installation', 2500)">Add</button>
+</div>
+
+<div class="product">
+    <img src="images/full-install.jpg">
+    <h3>Full Kitchen Installation</h3>
+    <p>R5,000 – R15,000</p>
+    <button onclick="addToCart('Full Kitchen Installation', 5500)">Add</button>
+</div>
+
+</div>
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div>
+            <h3>Kitchen Specialist</h3>
+            <p>Custom kitchens designed & installed in Alberton</p>
+        </div>
+
+        <div>
+            <h4>Contact</h4>
+            <p>📞 067 306 1578</p>
+            <p>📧 John@kitchenspecialist</p>
+        </div>
+
+        <div>
+            <h4>Quick Links</h4>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="shop.html">Shop</a></p>
+            <p><a href="gallery.html">Gallery</a></p>
+        </div>
+
+    </div>
+
+    <p class="copyright">© 2026 Kitchen Specialist Alberton</p>
+
+</footer>
+
+<script src="js/cart.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "products": [
+    {
+      "name": "Modern Cabinet",
+      "price": 2500,
+      "category": "cabinet",
+      "image": "images/cabinet.jpg"
+    },
+    {
+      "name": "Luxury Countertop",
+      "price": 1800,
+      "category": "counter",
+      "image": "images/counter.jpg"
+    }
+  ],
+  "orders": []
+}

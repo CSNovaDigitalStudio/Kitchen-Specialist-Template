@@ -1,0 +1,55 @@
+<h2>Admin Login</h2>
+
+<input id="user" placeholder="Username">
+<input id="pass" type="password" placeholder="Password">
+<button onclick="login()">Login</button>
+
+<div id="panel" style="display:none;">
+    <h1>Add Product</h1>
+
+    <input id="name" placeholder="Name">
+    <input id="price" placeholder="Price">
+    <input id="image" placeholder="Image path">
+    <select id="category">
+        <option value="cabinet">Cabinet</option>
+        <option value="counter">Counter</option>
+    </select>
+
+    <button onclick="addProduct()">Add</button>
+</div>
+
+<script>
+async function login() {
+    const res = await fetch("http://localhost:3000/login", {
+        method: "POST",
+        headers: {"Content-Type":"application/json"},
+        body: JSON.stringify({
+            username: user.value,
+            password: pass.value
+        })
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
+        panel.style.display = "block";
+    } else {
+        alert("Wrong login");
+    }
+}
+
+async function addProduct() {
+    await fetch("http://localhost:3000/products", {
+        method: "POST",
+        headers: {"Content-Type":"application/json"},
+        body: JSON.stringify({
+            name: name.value,
+            price: price.value,
+            image: image.value,
+            category: category.value
+        })
+    });
+
+    alert("Product added");
+}
+</script>
